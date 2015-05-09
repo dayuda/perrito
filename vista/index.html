@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="js/framework/estilo.css" rel="stylesheet" type="text/css" />
+    <script src="magicform" type="text/javascript"></script>
+    <script src="vista/js/jquery.min.js" type="text/javascript"></script>
+    <script  type="text/javascript">
+	$(document).ready(function () {	
+		var formulario = new form();
+		formulario.c_email({id: "email", ph:"Usuario", et:"Usuario", lim:100, col:12, ob:true});
+		formulario.c_clave({id: "clave", ph:"Contraseña", et:"Clave",  lim:100, col:12, ob:true});
+		formulario.c_cajdetexto({id: "clave", ph:"Contraseña", et:"Clave",  lim:100, col:12, ob:true});
+		formulario.c_submit({ph:"Enviar"});
+		formulario.setform("login");
+	});
+	</script> 
+</head>
+
+<body>
+    <div id="login">hok</div>
+</body>
+
+</html>
